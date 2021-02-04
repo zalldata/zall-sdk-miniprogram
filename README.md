@@ -14,7 +14,7 @@ var zall = require('./utils/zalldata.min.js');
 - 引入 SDK 后，可通过 ***setPara()*** 进行 SDK 初始化参数配置：
 
 ```js
-zall.setPara({
+   zall.setPara({
 	name: 'zall',
 	server_url: '您的数据接收地址',
 	// 全埋点控制开关
@@ -25,7 +25,7 @@ zall.setPara({
 	show_log: true,
 	// 是否允许修改 onShareAppMessage 里 return 的 path，用来增加(登录 ID，分享层级，当前的 path)，在 app onShow 中自动获取这些参数来查看具体分享来源、层级等
 	allow_amend_share_path: true
-});
+   });
 ```
 
 ## 1.3. 初始化 SDK
