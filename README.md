@@ -35,7 +35,7 @@ var zall = require('./utils/zalldata.min.js');
 
 ```js
 // 初始化 SDK
-  wx.request({
+   wx.request({
 	url: '后端获取 OpenID 的请求',
 	success: function(res){
 		if(res.OpenID){
@@ -46,7 +46,7 @@ var zall = require('./utils/zalldata.min.js');
 	complete: function(){
 		zall.init();
 	}
-  });
+   });
 ```
 
 - 在调用 ***init()*** 接口之前，采集的数据被缓存在内存中；调用 ***init()*** 接口后，会将缓存的数据通过网络发送出去。
@@ -64,13 +64,13 @@ var zall = require('./utils/zalldata.min.js');
 ```js
    zall.setPara({
 	autoTrack:{ 
-		appLaunch: true, // 默认为 true，false 则关闭 $MPLaunch 事件采集
-		appShow: true, // 默认为 true，false 则关闭 $MPShow 事件采集
-		appHide: true, // 默认为 true，false 则关闭 $MPHide 事件采集
-		pageShow: true, // 默认为 true，false 则关闭 $MPViewScreen 事件采集
-		pageShare: true, // 默认为 true，false 则关闭 $MPShare 事件采集
-		mpClick: false, // 默认为 false，true 则开启 $MPClick 事件采集 
-		mpFavorite: true // 默认为 true，false 则关闭 $MPAddFavorites 事件采集
+	    appLaunch: true, // 默认为 true，false 则关闭 $MPLaunch 事件采集
+	    appShow: true, // 默认为 true，false 则关闭 $MPShow 事件采集
+	    appHide: true, // 默认为 true，false 则关闭 $MPHide 事件采集
+	    pageShow: true, // 默认为 true，false 则关闭 $MPViewScreen 事件采集
+	    pageShare: true, // 默认为 true，false 则关闭 $MPShare 事件采集
+	    mpClick: false, // 默认为 false，true 则开启 $MPClick 事件采集 
+	    mpFavorite: true // 默认为 true，false 则关闭 $MPAddFavorites 事件采集
 	}
 
 	/**
@@ -97,7 +97,7 @@ var zall = require('./utils/zalldata.min.js');
 当用户注册成功或者登录成功时，需要调用 ***login()*** 方法传入登录 ID：
 
 ```js
-zall.login("登录 ID");
+  zall.login("登录 ID");
 ```
 
 对于自动登录的用户，可以在 SDK 初始化前，获取登录 ID 并调用 ***login()*** 方法。
