@@ -118,7 +118,11 @@ getApp().zall.track('click',{
 
 ***setPara()*** 配置初始化参数时，通过 ***show_log: true*** 打开 Log 功能且 SDK 完成初始化后（即 ***init()*** 方法调用后），微信开发者工具 **console** 会打印采集的数据信息：
 
+<<<<<<< HEAD:README.md
 ![https://github.com/zalldata/zall-sdk-miniprogram/blob/master/image-20210203102208425.png]()
+=======
+https://github.com/zalldata/zall-sdk-javascript/commit/adde982782e9c31abf3189913b3b6e41acfe528b
+>>>>>>> 9c7ed69386794690658b9e616ae2bc13eeceeefb:接入文档.md
 
 
 
