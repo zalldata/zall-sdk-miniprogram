@@ -116,17 +116,11 @@ getApp().zall.track('click',{
 
 ## 3.1. 事件的触发日志
 
-***setPara()*** 配置初始化参数时，通过 ***show_log: true*** 打开 Log 功能且 SDK 完成初始化后（即 ***init()*** 方法调用后），微信开发者工具 **console** 会打印采集的数据信息：
-
-![image](https://github.com/zalldata/zall-sdk-miniprogram/blob/master/images/20210203102208425.png)
-
-
+***setPara()*** 配置初始化参数时，通过 ***show_log: true*** 打开 Log 功能且 SDK 完成初始化后（即 ***init()*** 方法调用后），微信开发者工具 **console** 会打印采集的数据信息
 
 ## 3.2. 事件的发送情况
 
-事件数据发送成功时，可以在微信开发者工具的 **Network** 模块中，可以看到 **sa** 的请求：
-
-# ![image-20210203171356187](E:\编程之光\浅谈 ConcurrentSkipListMap\image-20210203171356187.png)
+事件数据发送成功时，可以在微信开发者工具的 **Network** 模块中，可以看到的请求
 
 ## 4.1. 设置用户属性
 
