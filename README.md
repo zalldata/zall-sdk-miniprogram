@@ -6,7 +6,7 @@
 - 在 **app.js** 文件中通过 ***require()*** 引入 SDK
 
 ```js
-var zall = require('./utils/zalldata.min.js');
+  var zall = require('./utils/zalldata.min.js');
 ```
 
 ## 1.2. 配置初始化参数
