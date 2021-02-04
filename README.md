@@ -35,7 +35,7 @@ var zall = require('./utils/zalldata.min.js');
 
 ```js
 // 初始化 SDK
-wx.request({
+  wx.request({
 	url: '后端获取 OpenID 的请求',
 	success: function(res){
 		if(res.OpenID){
@@ -46,7 +46,7 @@ wx.request({
 	complete: function(){
 		zall.init();
 	}
-});
+  });
 ```
 
 - 在调用 ***init()*** 接口之前，采集的数据被缓存在内存中；调用 ***init()*** 接口后，会将缓存的数据通过网络发送出去。
@@ -62,7 +62,7 @@ wx.request({
 ***setPara()*** 函数中 **autoTrack** 可用于配置需要开启的全埋点类型：
 
 ```js
-zall.setPara({
+   zall.setPara({
 	autoTrack:{ 
 		appLaunch: true, // 默认为 true，false 则关闭 $MPLaunch 事件采集
 		appShow: true, // 默认为 true，false 则关闭 $MPShow 事件采集
@@ -76,7 +76,7 @@ zall.setPara({
 	/**
 	 * 其他配置
 	 */
-});
+   });
 ```
 
 ## 2.3. 设置事件公共属性
@@ -84,10 +84,10 @@ zall.setPara({
 对于所有事件都需要添加的属性，可在初始化 SDK 前，调用 ***registerApp()*** 将属性注册为公共属性：
 
 ```js
-zall.registerApp({
+   zall.registerApp({
 	userLever: 'VIP3',
 	userSex: '男'
-});
+   });
 ```
 
 
@@ -107,9 +107,9 @@ zall.login("登录 ID");
 可通过 ***track()*** 方法追踪用户行为事件，并为事件添加自定义属性：
 
 ```js
-getApp().zall.track('click',{
-	name: '点击'
-});
+   getApp().zall.track('click',{
+      name: '点击'
+   });
 ```
 
 # 3. 调试查看事件信息
@@ -127,11 +127,11 @@ getApp().zall.track('click',{
 ***setProfile( properties ):*** 可以设定用户属性，同一个 key 多次设置时，value 值会进行覆盖替换：
 
 ```js
-zall.setProfile({
+    zall.setProfile({
 	email:'xxx@xx',
 	favoriteFruits: ['苹果', '油桃'],
 	subscribers: 7277
-});
+    });
 ```
 
 ## 4.2. 渠道追踪
